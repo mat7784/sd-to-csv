@@ -1,0 +1,14 @@
+# bin-to-csv-converter runtime dependencies
+#
+# The converter (bin_to_csv.py) uses only the Python standard library
+# (struct, zlib, csv, argparse) — there are NO third-party runtime deps.
+# This file exists so the usual pip workflow works:
+#
+#     py -3.12 -m venv .venv
+#     .\.venv\Scripts\Activate.ps1      # Windows PowerShell
+#     pip install -r requirements.txt
+#
+# Add packages below if/when an optional fast-path (e.g. numpy) is introduced.
+
+# build tools (not needed at runtime)
+pyinstaller
