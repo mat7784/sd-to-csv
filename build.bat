@@ -2,7 +2,7 @@
 :: build.bat — package gui.py into a single Windows executable.
 ::
 :: Prerequisites:
-::   pip install pyinstaller
+::   py -3 -m pip install pyinstaller
 ::
 :: Output: dist\sd_to_csv.exe
 ::
@@ -10,4 +10,5 @@
 :: --windowed  : suppress the black console window on Windows (GUI app)
 :: --name      : output binary name
 
-pyinstaller --onefile --windowed --name sd_to_csv gui.py
+py -3 -m PyInstaller --onefile --windowed --name sd_to_csv gui.py
+pause
